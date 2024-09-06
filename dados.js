@@ -1,20 +1,128 @@
-let dados = [
-    {
-      titulo: "Omen",
-      descricao: "Omen é um agente Controlador em VALORANT, conhecido por suas habilidades que manipulam as sombras e a escuridão. Envolto em mistério, ele é capaz de cegar inimigos, teletransportar-se pelo mapa e criar zonas de neblina que obscurecem a visão.",
-      link: "https://playvalorant.com/pt-br/agents/omen/",
-      tags: "sombra roxo smoke redonda",
-    },
-    {
-      titulo: "Jett",
-      descricao: "Jett é uma Duelista ágil e mortal em VALORANT. Conhecida por suas habilidades de mobilidade, ela pode deslizar pelo ar, impulsionar-se para a frente e criar rajadas de vento para escapar de situações perigosas.",
-      link: "https://playvalorant.com/pt-br/agents/jett/",
-      tags: "voa rapido matadora",
-    },
-    {
-      titulo: "Viper",
-      descricao: "Viper é uma Controladora que domina venenos letais em VALORANT. Suas habilidades criam paredes de gás tóxico, nuvens venenosas e poças corrosivas, permitindo que ela controle o campo de batalha e isole os inimigos.",
-      link: "https://playvalorant.com/pt-br/agents/viper/",
-      tags: "veneno verde parede",
-    }
-  ];
+[
+  {
+    titulo: "Omen",
+    descricao: "Envolto em sombras e mistério, Omen é um controlador que manipula a própria escuridão. Ele cega inimigos com orbes sombrias, teletransporta-se pelo mapa para flanquear oponentes ou escapar de situações perigosas, e usa fumaças para bloquear a visão e garantir vantagem tática.",
+    link: "https://playvalorant.com/pt-br/agents/omen/",
+    tags: "controlador, sombra, teleporte, fumaça, estratégico",
+  },
+  {
+    titulo: "Jett",
+    descricao: "Jett é uma duelista ágil e evasiva que corta os céus com precisão mortal. Capaz de impulsionar-se pelo ar, deslizar por cima de obstáculos e lançar adagas mortais, ela domina o campo de batalha com sua mobilidade incomparável, eliminando inimigos antes mesmo que eles percebam sua presença.",
+    link: "https://playvalorant.com/pt-br/agents/jett/",
+    tags: "duelista, vento, adagas, acrobática, veloz, agressiva",
+  },
+  {
+    titulo: "Viper",
+    descricao: "Viper utiliza venenos letais e gases tóxicos para controlar o campo de batalha. Ela ergue paredes de gás venenoso que bloqueiam a visão e prejudicam os inimigos, lança projéteis químicos que criam nuvens tóxicas duradouras e cobre uma área com uma névoa tóxica, debilitando qualquer um que ouse adentrá-la.",
+    link: "https://playvalorant.com/pt-br/agents/viper/",
+    tags: "controladora, veneno, gás, toxina, estratégico, defensivo",
+  },
+  {
+    titulo: "Phoenix",
+    descricao: "Phoenix é um duelista agressivo que domina o poder do fogo para incendiar o campo de batalha. Ele lança bolas de fogo explosivas, ergue paredes de chamas para bloquear a visão e curar a si mesmo, e utiliza um ultimate devastador que o transforma em uma cópia flamejante, capaz de eliminar inimigos sem medo da morte.",
+    link: "https://playvalorant.com/pt-br/agents/phoenix/",
+    tags: "duelista, fogo, flashbang, parede, agressivo, auto-suficiente",
+  },
+  {
+    titulo: "Reyna",
+    descricao: "Reyna é uma duelista vampírica que se alimenta das almas de seus inimigos para se fortalecer. Ela absorve a energia vital de oponentes abatidos, tornando-se invulnerável ou curando seus ferimentos. Seu ultimate amplifica seus poderes, transformando-a em uma força implacável e sanguinária.",
+    link: "https://playvalorant.com/pt-br/agents/reyna/",
+    tags: "duelista, vampira, auto-cura, agressiva, individualista, duelista",
+  },
+  {
+    titulo: "Cypher",
+    descricao: "Cypher é um controlador mestre em espionagem e disrupção, utilizando uma rede de câmeras e dispositivos para monitorar os movimentos inimigos. Ele usa uma câmera espiã para vigiar áreas remotas, bloqueia pontos de estrangulamento com fios de segurança cibernética que prendem e revelam oponentes, e seu ultimate extrai informações vitais da mente de um inimigo abatido.",
+    link: "https://playvalorant.com/pt-br/agents/cypher/",
+    tags: "controlador, armadilhas, câmera, informação, estratégico, defensivo",
+  },
+  {
+    titulo: "Sova",
+    descricao: "Sova é um controlador estratégico que usa seu arco personalizado e flechas especiais para revelar e eliminar inimigos à distância. Ele lança dardos rastreadores que revelam a localização de oponentes, dispara flechas sísmicas que atordoam e revelam inimigos em uma pequena área, e seu ultimate desfere um poderoso raio de energia que atravessa paredes, eliminando inimigos em seu caminho.",
+    link: "https://playvalorant.com/pt-br/agents/sova/",
+    tags: "controlador, arco, flecha, reconhecimento, estratégico, dano",
+  },
+  {
+    titulo: "Sage",
+    descricao: "Sage é uma sentinela compassiva que protege seus aliados com cura e suporte. Ela cura aliados feridos com orbes de energia vital, retarda o avanço inimigo com paredes de gelo que bloqueiam caminhos, e seu ultimate ressuscita um aliado caído, trazendo-o de volta à luta.",
+    link: "https://playvalorant.com/pt-br/agents/sage/",
+    tags: "sentinela, cura, parede, suporte, defensiva, estratégica",
+  },
+  {
+    titulo: "Killjoy",
+    descricao: "Killjoy é uma sentinela genial que protege áreas estratégicas com suas invenções letais. Ela posiciona torres automáticas que disparam contra inimigos dentro de seu alcance, lança granadas incendiárias que incendeiam o solo e criam zonas de negação, e seu ultimate confina uma área com uma série de torres que prendem e eliminam qualquer inimigo que ousar adentrá-la.",
+    link: "https://playvalorant.com/pt-br/agents/killjoy/",
+    tags: "sentinela, torre, granada, robô, defensiva, estratégica",
+  },
+  {
+    titulo: "Brimstone",
+    descricao: "Brimstone é um controlador estratégico que utiliza um arsenal de dispositivos militares para atacar inimigos e auxiliar seus aliados. Ele lança granadas incendiárias de efeito em área, dispara sinalizadores que aumentam a cadência de tiro de seus aliados, e seu ultimate invoca um bombardeio orbital devastador que pulveriza qualquer inimigo em seu raio de ação.",
+    link: "https://playvalorant.com/pt-br/agents/brimstone/",
+    tags: "controlador, granada, fumaça, orbital, estratégico, ofensivo",
+  },
+  {
+    titulo: "Raze",
+    descricao: "Raze é uma duelista explosiva que causa caos e destruição com seu arsenal de explosivos. Ela lança granadas-clusters que ricocheteiam nas paredes e explodem em fragmentos mortais, dispara um robô explosivo que persegue inimigos e detona ao contato, e seu ultimate equipa um lança-mísseis devastador, capaz de destruir grupos de inimigos e dizimar defesas.",
+    link: "https://playvalorant.com/pt-br/agents/raze/",
+    tags: "duelista, explosivos, robô, lança-mísseis, agressiva, demolidora",
+  },
+  {
+    titulo: "Breach",
+    descricao: "Breach é um iniciador que usa terremotos sísmicos para romper defesas inimigas e desorientar oponentes. Ele lança tremores sísmicos que atordoam inimigos através de paredes, dispara explosões de energia cinética que desorientam e cegam oponentes, e seu ultimate desencadeia uma série de ondas sísmicas devastadoras que atravessam o mapa, desorientando e destruindo qualquer inimigo em seu caminho.",
+    link: "https://playvalorant.com/pt-br/agents/breach/",
+    tags: "iniciador, terremoto, atordoamento, flashbang, agressivo, demolidor",
+  },
+  {
+    titulo: "Skye",
+    descricao: "Skye é uma iniciadora que comanda o poder da natureza para curar aliados e rastrear inimigos. Ela cura aliados com auras curativas emanadas de seus espíritos guias, lança falcões etéreos que revelam a localização de inimigos, e seu ultimate libera lobos etéreos que caçam e cegam os inimigos.",
+    link: "https://playvalorant.com/pt-br/agents/skye/",
+    tags: "iniciadora, cura, reconhecimento, flashbang, suporte, estratégico",
+  },
+  {
+    titulo: "Yoru",
+    descricao: "Yoru é um duelista que se move entre as dimensões, confundindo seus inimigos com truques e ilusões. Ele lança portais dimensionais para se teletransportar ou confundir inimigos, cria passos falsos que imitam seus movimentos, e seu ultimate o lança em uma dimensão alternativa, permitindo que ele se movimente sem ser visto pelos inimigos.",
+    link: "https://playvalorant.com/pt-br/agents/yoru/",
+    tags: "duelista, teleporte, ilusão, invisibilidade, flanqueador, estratégico",
+  },
+  {
+    titulo: "Astra",
+    descricao: "Astra é uma controladora cósmica que utiliza a energia astral para controlar o campo de batalha. Ela coloca estrelas astrais em sua forma astral, que podem ser ativadas para criar pulsos de energia que concussam, sugam ou explodem, e seu ultimate invoca um muro cósmico que bloqueia balas e amortece sons.",
+    link: "https://playvalorant.com/pt-br/agents/astra/",
+    tags: "controladora, astral, estrela, fumaça, atordoamento, estratégico",
+  },
+  {
+    titulo: "KAY/O",
+    descricao: "KAY/O é um iniciador robótico que busca eliminar os Radiantes com seus explosivos e pulsos de supressão. Ele lança granadas de fragmentação que explodem após um curto período de tempo, dispara facas explosivas que se prendem às superfícies e explodem, e seu ultimate libera uma onda de energia supressora que impede os inimigos de usar suas habilidades.",
+    link: "https://playvalorant.com/pt-br/agents/kayo/",
+    tags: "iniciador, robô, granada, supressão, agressivo, tático",
+  },
+  {
+    titulo: "Chamber",
+    descricao: "Chamber é uma sentinela francesa elegante e calculista que usa suas armas personalizadas e dispositivos de teleporte para defender o território com precisão mortal. Ele equipa uma pistola pesada poderosa, coloca dispositivos de teleporte para se reposicionar rapidamente, e seu ultimate invoca um rifle de precisão poderoso capaz de eliminar inimigos com um único tiro.",
+    link: "https://playvalorant.com/pt-br/agents/chamber/",
+    tags: "sentinela, teleporte, franco-atirador, pistola, estratégico, defensivo",
+  },
+  {
+    titulo: "Neon",
+    descricao: "Neon é uma duelista filipina que corre na velocidade da luz, canalizando energia bioelétrica para energizar suas investidas mortais. Ela corre em alta velocidade, desliza pelo chão, lança projéteis de energia bioelétrica e libera um raio de energia concentrado de seus dedos.",
+    link: "https://playvalorant.com/pt-br/agents/neon/",
+    tags: "duelista, velocidade, energia, raio, agressiva, veloz",
+  },
+  {
+    titulo: "Fade",
+    descricao: "Fade é uma iniciadora turca que explora os medos mais profundos de seus inimigos, utilizando o poder de uma entidade assustadora. Ela lança orbes de pesadelo que revelam a localização dos inimigos, cria rastros de criaturas sombrias que marcam inimigos, e seu ultimate libera uma onda de energia aterrorizante que marca e enfraquece os inimigos.",
+    link: "https://playvalorant.com/pt-br/agents/fade/",
+    tags: "iniciadora, medo, sombra, marcação, reconhecimento, estratégico",
+  },
+  {
+    titulo: "Harbor",
+    descricao: "Harbor é um controlador indiano que controla a força da água para proteger seus aliados e repelir inimigos. Ele equipa um artefato ancestral que libera ondas de água, criando paredes que bloqueiam projéteis, ondas de água que concussam inimigos e poças de água que curam seus aliados.",
+    link: "https://playvalorant.com/pt-br/agents/harbor/",
+    tags: "controlador, água, parede, cura, estratégico, defensivo",
+  },
+  {
+    titulo: "Gekko",
+    descricao: "Gekko é um iniciador latino-americano que comanda uma equipe de criaturas para desorientar inimigos, cegá-los e causar explosões. Ele equipa quatro criaturas diferentes, cada uma com sua habilidade única, para criar jogadas estratégicas e explosivas.",
+    link: "https://playvalorant.com/pt-br/agents/gekko/",
+    tags: "iniciador, criatura, flashbang, explosão, estratégico, tático",
+  }
+];
