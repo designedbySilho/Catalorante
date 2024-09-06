@@ -1,4 +1,4 @@
-[
+let dados = [
   {
     titulo: "Omen",
     descricao: "Envolto em sombras e mistério, Omen é um controlador que manipula a própria escuridão. Ele cega inimigos com orbes sombrias, teletransporta-se pelo mapa para flanquear oponentes ou escapar de situações perigosas, e usa fumaças para bloquear a visão e garantir vantagem tática.",
